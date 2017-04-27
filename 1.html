@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+<style>
+    .test1{
+        width:100px;
+        height: 100px;
+        background-color: green;
+    }
+</style>
+
+<script type="text/javascript">
+    function myFunction(){
+        var test1 = document.getElementById('test1');
+        if(test1.style.backgroundColor=='yellow'){
+            test1.style.backgroundColor='green';
+        }else{
+            test1.style.backgroundColor='yellow';
+        }
+    }
+</script>
+</head>
+
+<body>
+    <div class="test1" id="test1" alt="">
+
+    </div>
+  <input type="button"  onclick="myFunction()" value="点我切换"></input>
+</body>
+</html>
